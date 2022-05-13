@@ -24,18 +24,29 @@ namespace Microsoft.MixedReality.Toolkit.UI
         private void Start()
         {
             PointerUtils.SetHandRayPointerBehavior(PointerBehavior.AlwaysOff);
+
+
             profilerButton.IsToggled = (CoreServices.DiagnosticsSystem?.ShowProfiler).GetValueOrDefault(false);
             handRayButton.IsToggled = PointerUtils.
-            
+
             GetPointerBehavior<ShellHandRayPointer>(Handedness.Any, InputSourceType.Hand) != PointerBehavior.AlwaysOff;
 
             MixedRealityHandTrackingProfile handProfile = null;
             if (CoreServices.InputSystem?.InputSystemProfile != null)
             {
                 handProfile = CoreServices.InputSystem.InputSystemProfile.HandTrackingProfile;
+
             }
-            handMeshButton.IsToggled = handProfile != null && handProfile.EnableHandMeshVisualization;
-            handJointsButton.IsToggled = handProfile != null && handProfile.EnableHandJointVisualization;
+            handProfile.EnableHandMeshVisualization = true;
+            //he
+
+            handMeshButton.IsToggled = true;
+
+            // handProfile != null && handProfile.EnableHandMeshVisualization;
+
+            handJointsButton.IsToggled = false;
+
+            //handProfile != null && handProfile.EnableHandJointVisualization;
         }
     }
 }

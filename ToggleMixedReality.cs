@@ -3,16 +3,17 @@
 
 using Microsoft.MixedReality.Toolkit.Input;
 using UnityEngine;
-
+using TMPro;
 namespace Microsoft.MixedReality.Toolkit.UI
 {
-  
+
     public class ToggleMixedReality : MonoBehaviour
     {
         /// <summary>
         /// Toggles hand mesh visualization
         /// </summary>
-        public void OnToggleHandMesh()
+        public TextMeshPro mode;
+        public void OnToggleMixedReality()
         {
             MixedRealityInputSystemProfile inputSystemProfile = CoreServices.InputSystem?.InputSystemProfile;
             if (inputSystemProfile == null)
@@ -21,28 +22,23 @@ namespace Microsoft.MixedReality.Toolkit.UI
             }
 
             MixedRealityHandTrackingProfile handTrackingProfile = inputSystemProfile.HandTrackingProfile;
+
             if (handTrackingProfile != null)
             {
                 handTrackingProfile.EnableHandMeshVisualization = !handTrackingProfile.EnableHandMeshVisualization;
             }
-        }
-
-        /// <summary>
-        /// Toggles hand joint visualization
-        /// </summary>
-        public void OnToggleHandJoint()
-        {
-            MixedRealityHandTrackingProfile handTrackingProfile = null;
-
-            if (CoreServices.InputSystem?.InputSystemProfile != null)
+            Debug.Log(handTrackingProfile.EnableHandMeshVisualization);
+            if (handTrackingProfile.EnableHandMeshVisualization)
             {
-                handTrackingProfile = CoreServices.InputSystem.InputSystemProfile.HandTrackingProfile;
+                mode.text = "Mode :VR";
+            }
+            else
+            {
+                mode.text = "Mode :MR";
             }
 
-            if (handTrackingProfile != null)
-            {
-                handTrackingProfile.EnableHandJointVisualization = !handTrackingProfile.EnableHandJointVisualization;
-            }
         }
+
+
     }
 }

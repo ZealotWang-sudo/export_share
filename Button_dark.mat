@@ -187,7 +187,7 @@ Material:
     - _HoverColor: {r: 1, g: 0, b: 0, a: 1}
     - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
     - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 0.566}
-    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.24705882}
+    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.36078432}
     - _ProximityLightCenterColorOverride: {r: 1, g: 0, b: 0, a: 0}
     - _ProximityLightMiddleColorOverride: {r: 0, g: 1, b: 0, a: 0.5}
     - _ProximityLightOuterColorOverride: {r: 0, g: 0, b: 1, a: 1}
