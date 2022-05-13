@@ -4,7 +4,8 @@
 using Microsoft.MixedReality.Toolkit.Input;
 using UnityEngine;
 using TMPro;
-using Varjo.XR;
+//using Varjo.XR;
+//using Varjo.XR;
 namespace Microsoft.MixedReality.Toolkit.UI
 {
 
@@ -16,7 +17,7 @@ namespace Microsoft.MixedReality.Toolkit.UI
         public TextMeshPro mode;
         void Start()
         {
-            VarjoMixedReality.DisableDepthEstimation();
+          //  VarjoMixedReality.DisableDepthEstimation();
            
 
         }
@@ -41,14 +42,14 @@ namespace Microsoft.MixedReality.Toolkit.UI
             if (handTrackingProfile.EnableHandMeshVisualization)
             {
                 mode.text = "Mode :VR";
-                VarjoMixedReality.DisableDepthEstimation();
-                VarjoMixedReality.StopRender();
+              //  VarjoMixedReality.DisableDepthEstimation();
+              //  VarjoMixedReality.StopRender();
             }
             else
             {
                 mode.text = "Mode :MR";
-                VarjoMixedReality.StartRender();
-                VarjoMixedReality.EnableDepthEstimation();
+             //   VarjoMixedReality.StartRender();
+            //    VarjoMixedReality.EnableDepthEstimation();
             }
 
         }
