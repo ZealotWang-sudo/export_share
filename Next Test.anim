@@ -28,7 +28,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 1
-        value: {x: 15.828, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -179,7 +179,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 1
-        value: {x: -0.1321, y: -0.2502, z: 0.113}
+        value: {x: -0.116100006, y: -0.2502, z: 0.12230005}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -279,7 +279,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 1
-        value: {x: -0.1242, y: -0.2043, z: 0.1047}
+        value: {x: -0.1082, y: -0.2043, z: 0.114}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -1543,13 +1543,6 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2895290881
-      attribute: 4
-      script: {fileID: 0}
-      typeID: 4
-      customType: 4
-      isPPtrCurve: 0
-    - serializedVersion: 2
       path: 3369267909
       attribute: 3
       script: {fileID: 0}
@@ -1730,6 +1723,13 @@ AnimationClip:
       script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
       typeID: 114
       customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2895290881
+      attribute: 4
+      script: {fileID: 0}
+      typeID: 4
+      customType: 4
       isPPtrCurve: 0
     - serializedVersion: 2
       path: 2967987665
@@ -2920,7 +2920,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: -0.1321
+        value: -0.116100006
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2976,7 +2976,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0.113
+        value: 0.12230005
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -3256,7 +3256,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: -0.1242
+        value: -0.1082
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -3312,7 +3312,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0.1047
+        value: 0.114
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -3592,7 +3592,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 15.828
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -4620,8 +4620,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: ButtonTestingSection/TestButton
+    attribute: m_LocalEulerAngles.z
+    path: ButtonTestingSection/TestButton (4)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -4631,7 +4631,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: ButtonTestingSection/TestButton
+    path: ButtonTestingSection/TestButton (4)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -4640,8 +4640,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: ButtonTestingSection/TestButton
+    attribute: m_LocalEulerAngles.x
+    path: ButtonTestingSection/TestButton (4)
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -4711,7 +4711,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: ButtonTestingSection/TestButton (4)
+    path: ButtonTestingSection/TestButton
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -4721,7 +4721,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: ButtonTestingSection/TestButton (4)
+    path: ButtonTestingSection/TestButton
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -4731,7 +4731,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: ButtonTestingSection/TestButton (4)
+    path: ButtonTestingSection/TestButton
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 0
